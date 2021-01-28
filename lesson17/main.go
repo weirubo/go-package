@@ -90,5 +90,33 @@ func main() {
 	// '+' '' '-' '#' '0'
 
 	// fmt 包常用方法
+	// func Printf
+	// func Printf(format string, a ...interface{}) (n int, err error)
+	fmt.Printf("lucy's age is %d\n", lucy.age)
 
+	// func Sprintf
+	// func Sprintf(format string, a ...interface{}) string
+	lucyLeval := fmt.Sprintf("lucy's leval is %s\n", lucy.level)
+	fmt.Println(lucyLeval)
+
+	// func Print
+	// func Print(a ...interface{}) (n int, err error)
+	fmt.Print(lucy.score, lucy.age)
+
+	fmt.Println()
+
+	// func Sprint
+	// func Sprint(a ...interface{}) string
+	lucyInfo := fmt.Sprint(lucy.name, lucy.sex)
+	fmt.Println(lucyInfo)
+
+	// func Sprintln
+	// func Sprintln(a ...interface{}) string
+	lucyInfo2 := fmt.Sprintln(lucy.name, lucy.age)
+	fmt.Println(lucyInfo2)
+
+	// func Errorf
+	// func Errorf(format string, a ...interface{}) error
+	err := fmt.Errorf("lucy's age is %d", lucy.age)
+	fmt.Println(err)
 }
