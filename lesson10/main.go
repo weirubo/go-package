@@ -1,43 +1,122 @@
 package main
 
-import (
-	"fmt"
-	"sync"
-)
+import "fmt"
 
-// Cond
+// fmt
+
+type person struct {
+	name  string
+	sex   string
+	age   int
+	score float64
+	level string
+}
 
 func main() {
-	var mu sync.Mutex
-	// 创建 Cond
-	cond := sync.NewCond(&mu)
-
-	// 计数
-	var count uint64
-
-	// 报名表
-	var stuSlice []int
-
-	// 模拟学生报名参加课外活动
-	for i := 0; i < 30; i++ {
-		go func(i int) {
-			cond.L.Lock()
-			stuSlice = append(stuSlice, i)
-			count++
-			cond.L.Unlock()
-
-			// 唤醒所有等待此 cond 的 goroutine
-			cond.Broadcast()
-		}(i)
+	// verb 格式化动作
+	// 通用
+	lucy := person{
+		name:  "lucy",
+		sex:   "女",
+		age:   17,
+		score: 658.5,
+		level: "b+",
 	}
+	// %v 值得默认格式
+	fmt.Printf("lucy:%v\n", lucy)
+	// %+v 类似%v，但输出结构体时会添加字段名
+	fmt.Printf("lucy:%+v\n", lucy)
+	// %#v 值的 Go 语法表示
+	fmt.Printf("lucy:%#v\n", lucy)
+	// %T 值的类型 Go 语法表示
+	fmt.Printf("lucy:%T\n", lucy)
+	// %% 输出百分号
+	fmt.Printf("lucy:%v 100%%\n", lucy)
 
-	// 调用 Wait 方法前，调用者必须持有锁
-	cond.L.Lock()
-	for count != 30 {
-		// 调用者被阻塞，并被放入 cond 的等待队列中
-		cond.Wait()
-	}
-	cond.L.Unlock()
+	// 布尔值，Go 语言中 bool 类型的变量默认值是 false
+	var bool bool
+	fmt.Printf("%t\n", bool)
 
-	fmt.Println(len(stuSlice), stuSlice)
+	// 数值输出不区分有无符号，不区分长度（int8, int16），但是区分宽度和精度
+	// 整数
+	// %b 二进制
+	fmt.Printf("lucy's age is:%b\n", lucy.age)
+	// %c 该值对应的 unicode 码值
+	fmt.Printf("lucy's age is:%c\n", 1)
+	// %d 十进制
+	fmt.Printf("lucy's age is:%d\n", lucy.age)
+	// %o 八进制
+	fmt.Printf("lucy's age is:%o\n", lucy.age)
+	// %q 该值对应的单引号括起来的 go 语法字符字面值，必要时会采用安全的转义表示
+	fmt.Printf("lucy's age is:%q\n", lucy.age)
+	// %x 十六进制，使用 a-f
+	fmt.Printf("lucy's age is:%x\n", lucy.age)
+	// %X 十六进制，使用 A-F
+	fmt.Printf("lucy's age is:%X\n", lucy.age)
+	// %U Unicode 格式
+	fmt.Printf("lucy's age is:%U\n", lucy.age)
+
+	// 浮点数
+	// %b 无小数部分、二进制指数的科学计数法
+	fmt.Printf("lucy's score is:%b\n", lucy.score)
+	// %e 科学计数法
+	fmt.Printf("lucy's score is:%e\n", lucy.score)
+	// %E 科学计数法
+	fmt.Printf("lucy's score is:%E\n", lucy.score)
+	// %f 有小数部分，但无指数部分
+	fmt.Printf("lucy's score is:%f\n", lucy.score)
+	// %F 等价于%f
+	fmt.Printf("lucy's score is:%F\n", lucy.score)
+	// %g 根据实际情况采用%e 或%f 格式
+	fmt.Printf("lucy's score is:%g\n", lucy.score)
+	// %G 根据实际情况采用%E 或%F格式
+	fmt.Printf("lucy's score is:%G\n", lucy.score)
+
+	// 字符串和 byte
+	// %s 直接输出字符串或[]byte
+	fmt.Printf("lucy's sex is:%s\n", lucy.sex)
+	// %q 该值对应的双引号括起来的 go 语法字符串字面量，必要时会采用安全的转义表示
+	fmt.Printf("lucy's sex is:%q\n", lucy.sex)
+	// %x 每个字节用两字符十六进制数表示，a-f
+	fmt.Printf("lucy's level is:%x\n", lucy.level)
+	// %X 每个字节用两字符十六进制数表示，A-F
+	fmt.Printf("lucy's level is:%X\n", lucy.level)
+
+	// 指针
+	// %p 内存地址，表示为十六进制，并加上前导的 0x
+	fmt.Printf("lucy's sex is:%q, %p\n", lucy.sex, &lucy.sex)
+
+	// 其它 flag
+	// '+' '' '-' '#' '0'
+
+	// fmt 包常用方法
+	// func Printf
+	// func Printf(format string, a ...interface{}) (n int, err error)
+	fmt.Printf("lucy's age is %d\n", lucy.age)
+
+	// func Sprintf
+	// func Sprintf(format string, a ...interface{}) string
+	lucyLeval := fmt.Sprintf("lucy's leval is %s\n", lucy.level)
+	fmt.Println(lucyLeval)
+
+	// func Print
+	// func Print(a ...interface{}) (n int, err error)
+	fmt.Print(lucy.score, lucy.age)
+
+	fmt.Println()
+
+	// func Sprint
+	// func Sprint(a ...interface{}) string
+	lucyInfo := fmt.Sprint(lucy.name, lucy.sex)
+	fmt.Println(lucyInfo)
+
+	// func Sprintln
+	// func Sprintln(a ...interface{}) string
+	lucyInfo2 := fmt.Sprintln(lucy.name, lucy.age)
+	fmt.Println(lucyInfo2)
+
+	// func Errorf
+	// func Errorf(format string, a ...interface{}) error
+	err := fmt.Errorf("lucy's age is %d", lucy.age)
+	fmt.Println(err)
 }
