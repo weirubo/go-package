@@ -10,12 +10,11 @@
 9. Go 使用标准库 bytes 包
 10. Go 使用标准库 os 包操作文件
 11. [Go 使用标准库 log 包](https://mp.weixin.qq.com/s/_R-xcuyHOc_iCx2Bd_pA5w)
-12. Go 使用标准库 io 包读写、拷贝和断点续传文件
-13. Go 使用标准库 ioutil 包读写文件和操作文件夹
-14. Go 使用标准库 bufio 包在缓冲区读写文件
+12. Go 使用标准库 io 包
+13. Go 使用标准库 bufio 包
+14. Go 使用标准库 flag 包
 15. [Go 使用标准库 time 包](https://mp.weixin.qq.com/s/ZULa_S-jSOMHS0-SiFqz4A)
 16. Go 使用标准库 math 包
 17. Go 使用标准库 sort 包
-18. Go 使用标准库 flag 包
-19. Go 使用标准库 reflect 包
-20. Go 使用标准库 runtime 包
+18. Go 使用标准库 reflect 包
+19. Go 使用标准库 runtime 包
