@@ -11,8 +11,8 @@
 10. Go 使用标准库 os 包操作文件
 11. [Go 使用标准库 log 包](https://mp.weixin.qq.com/s/_R-xcuyHOc_iCx2Bd_pA5w)
 12. Go 使用标准库 io 包读写、拷贝和断点续传文件
-13. Go 使用标准库 bufio 包在缓冲区读写文件
-14. Go 使用标准库 ioutil 包读写文件和操作文件夹
+13. Go 使用标准库 ioutil 包读写文件和操作文件夹
+14. Go 使用标准库 bufio 包在缓冲区读写文件
 15. [Go 使用标准库 time 包](https://mp.weixin.qq.com/s/ZULa_S-jSOMHS0-SiFqz4A)
 16. Go 使用标准库 math 包
 17. Go 使用标准库 sort 包
