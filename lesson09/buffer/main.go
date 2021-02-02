@@ -76,11 +76,11 @@ func main () {
 	// 切片仅在下一次缓冲区修改之前有效（也就是说，直到下一次调用读取、写入、重置或截断的方法）
 	// 切片别名缓冲区内容至少到下一次缓冲区修改，因此对切片的即时更改将影响将来读取的结果。
 	buf := bytes.NewBufferString("golang")
-	fmt.Fprintf(buf, "gopher")
+	// fmt.Fprintf(buf, "gopher")
 	// buf.Grow(10)
-	// fmt.Printf("%q\n", buf.Bytes())
+	fmt.Printf("%q\n", buf.Bytes())
 	// fmt.Println(buf.Cap())
-	fmt.Println(buf.Len())
+	// fmt.Println(buf.Len())
 	// fmt.Printf("%q\n", buf.Next(4))
 	// fmt.Printf("%q\n", buf.Next(4))
 
