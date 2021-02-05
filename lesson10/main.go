@@ -1,12 +1,13 @@
 package main
 
+// time 包
+
 import (
 	"fmt"
 	"time"
 )
 
 func main() {
-	// time 包
 	// 声明 Time 类型
 	var t time.Time
 	fmt.Println(t)
