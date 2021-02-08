@@ -9,7 +9,7 @@
 8. [Go 使用标准库 strings 包](https://mp.weixin.qq.com/s/ZULa_S-jSOMHS0-SiFqz4A)
 9. [Go 使用标准库 bytes 包](https://mp.weixin.qq.com/s/EP-QmnwJVWVmpTbPfUnJ2g)
 10. [Go 使用标准库 time 包](https://mp.weixin.qq.com/s/ZULa_S-jSOMHS0-SiFqz4A)
-11. Go 使用标准库 os 包操作文件
+11. [Go 使用标准库 os 包操作目录和文件](https://mp.weixin.qq.com/s/P_NRcm9LrMuKTWBnoeKP9A)
 12. [Go 使用标准库 log 包](https://mp.weixin.qq.com/s/_R-xcuyHOc_iCx2Bd_pA5w)
 13. Go 使用标准库 io 包
 14. Go 使用标准库 bufio 包
