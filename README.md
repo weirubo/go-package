@@ -13,9 +13,10 @@
 12. [Go 使用标准库 log 包](https://mp.weixin.qq.com/s/_R-xcuyHOc_iCx2Bd_pA5w)
 13. Go 使用标准库 io 包
 14. Go 使用标准库 bufio 包
-15. Go 使用标准库 flag 包
-16. Go 使用标准库 math 包
-17. Go 使用标准库 sort 包
-18. Go 使用标准库 reflect 包
-19. Go 使用标准库 runtime 包
-20. Go 使用标准库 unsafe 包
+15. [Go 使用标准库 embed 包](https://mp.weixin.qq.com/s/AO0i9olKZlQ4gtxF3Gr1gA)
+16. Go 使用标准库 flag 包
+17. Go 使用标准库 math 包
+18. Go 使用标准库 sort 包
+19. Go 使用标准库 reflect 包
+20. Go 使用标准库 runtime 包
+21. Go 使用标准库 unsafe 包
