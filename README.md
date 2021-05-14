@@ -5,10 +5,10 @@
 4. Go 使用标准库 fmt 包
 5. [Go 使用标准库 database/sql 包和三方数据库驱动包操作 MySQL](https://mp.weixin.qq.com/s/JEWaU7DTkNllxK28BKvFUA)
 6. [Go 使用标准库 encoding/json 包解码 JSON](https://mp.weixin.qq.com/s/OyPlXss8L6zSb0HGIydbrw)
-7. [Go 使用标准库 strconv 包](https://mp.weixin.qq.com/s/ZULa_S-jSOMHS0-SiFqz4A)
-8. [Go 使用标准库 strings 包](https://mp.weixin.qq.com/s/ZULa_S-jSOMHS0-SiFqz4A)
+7. Go 使用标准库 strconv 包
+8. Go 使用标准库 strings 包
 9. [Go 使用标准库 bytes 包](https://mp.weixin.qq.com/s/EP-QmnwJVWVmpTbPfUnJ2g)
-10. [Go 使用标准库 time 包](https://mp.weixin.qq.com/s/ZULa_S-jSOMHS0-SiFqz4A)
+10. Go 使用标准库 time 包
 11. [Go 使用标准库 os 包操作目录和文件](https://mp.weixin.qq.com/s/P_NRcm9LrMuKTWBnoeKP9A)
 12. [Go 使用标准库 log 包](https://mp.weixin.qq.com/s/_R-xcuyHOc_iCx2Bd_pA5w)
 13. Go 使用标准库 io 包
