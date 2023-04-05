@@ -12,7 +12,7 @@
 11. [Go 使用标准库 os 包操作目录和文件](https://mp.weixin.qq.com/s/P_NRcm9LrMuKTWBnoeKP9A)
 12. [Go 使用标准库 log 包](https://mp.weixin.qq.com/s/_R-xcuyHOc_iCx2Bd_pA5w)
 13. [Go 使用标准库 io 包](https://mp.weixin.qq.com/s/ApHdIvEcki4LxLheBoB2ew)
-14. Go 使用标准库 bufio 包
+14. [Go 使用标准库 bufio 包](https://mp.weixin.qq.com/s/aP9bT4UL1MK5EDx18WfvmQ)
 15. [Go 使用标准库 embed 包](https://mp.weixin.qq.com/s/AO0i9olKZlQ4gtxF3Gr1gA)
 16. [Go 使用标准库 errors 包](https://mp.weixin.qq.com/s/DUvLkO5tLUCOp2IeVjgbeg)    
 17. Go 使用标准库 math 包
